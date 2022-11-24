@@ -1,10 +1,10 @@
-use crate::board::types::MoveType;
+use crate::game::types::MoveType;
 use std::ops;
 
 #[derive(Clone, Copy)]
-pub struct Position {
-    pub x: u8,
-    pub y: u8,
+pub(crate) struct Position {
+    pub(crate) x: u8,
+    pub(crate) y: u8,
 }
 
 impl ops::Add<MoveType> for Position {
